@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1>Constructor</h1>
+    <p id="demo"></p>
+
+    <script>
+        function person(first, last, age, eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyecolor = eye;
+        }
+        const myFather = new person("krishna","narayan","50","blue");
+        document.getElementById("demo").innerHTML="my father is" +  myFather.firstName + ".";
+    </script>
+</body>
+</html>

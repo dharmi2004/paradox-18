@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+    <script>
+
+        class employee {
+            constructor(name) {
+                console.log("constructor : employee" + name);
+            }
+        }
+        class manager extends employee{
+            constructor(name) {
+                super();
+                console.log("constructor : manager"  + name);
+            }
+        }
+        let a = new manager("hello");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
